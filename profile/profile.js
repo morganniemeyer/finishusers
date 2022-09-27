@@ -72,6 +72,10 @@ profileForm.addEventListener('submit', async (e) => {
 
 function displayProfile() {
     // > Part B: update user name and bio from profile object
+    if (profile) {
+        userNameInput.value = profile.user_name;
+        bioTextArea.value = profile.bio;
+    }
 }
 
 function displayError() {
